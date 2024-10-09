@@ -1,0 +1,159 @@
+{% load static %}
+<body>
+  {% include 'includes/header.html' %}
+  <main>
+    <img class="shortcut" src="{% static 'images/wooting.jpg' %}" alt="" />
+  </main>
+  <div class="container">
+    <div class="description">
+      <div class="container">
+        <div class="column">
+          <h2>1. Driver Type</h2>
+          <p>
+            Dynamic Drivers: Most common; delivers powerful bass and loud sound.
+          </p>
+          <p>
+            Planar Magnetic Drivers: Known for superior sound quality and
+            precision.
+          </p>
+          <p>
+            Electrostatic Drivers: Rare and expensive, providing high-end
+            clarity and detail.
+          </p>
+
+          <h2>2. Frequency Response</h2>
+          <p>
+            Measured in Hertz (Hz), indicates the range of sounds the headphones
+            can reproduce.
+          </p>
+          <p>
+            Typical range: 20Hz to 20kHz, with lower values representing bass
+            and higher values treble.
+          </p>
+
+          <h2>3. Impedance</h2>
+          <p>
+            Measured in Ohms (Ω), affects the amount of power required to drive
+            the headphones.
+          </p>
+          <p>
+            Low impedance (below 32Ω): Easier to power from phones and portable
+            devices.
+          </p>
+          <p>
+            High impedance (above 100Ω): Requires more power, typically used
+            with amplifiers.
+          </p>
+
+          <h2>4. Sensitivity</h2>
+          <p>
+            Measured in decibels (dB), determines how loud the headphones can
+            get.
+          </p>
+          <p>Higher sensitivity: Louder sound with less power.</p>
+
+          <h2>5. Connectivity</h2>
+          <p>
+            Wired: Standard 3.5mm jack or USB connection for consistent sound
+            quality.
+          </p>
+          <p>
+            Wireless: Bluetooth, often with aptX or AAC codecs for higher sound
+            quality.
+          </p>
+          <p>USB-C/Lightning: Used for devices without 3.5mm jacks.</p>
+        </div>
+
+        <div class="column">
+          <h2>6. Noise Cancellation</h2>
+          <p>
+            Active Noise Cancellation (ANC): Uses microphones to cancel out
+            ambient noise.
+          </p>
+          <p>
+            Passive Noise Isolation: Achieved through design, blocking out noise
+            physically.
+          </p>
+
+          <h2>7. Soundstage</h2>
+          <p>
+            The sense of space and depth in sound; important for immersive
+            listening experiences.
+          </p>
+
+          <h2>8. Build Quality</h2>
+          <p>
+            Materials: Plastic for lightweight designs, metal for durability.
+          </p>
+          <p>Ear Cups: Leather or fabric for comfort during long sessions.</p>
+
+          <h2>9. Battery Life (Wireless)</h2>
+          <p>
+            Measured in hours, the longer the battery life, the better for
+            wireless use.
+          </p>
+          <p>Fast Charging: Some headphones offer quick charging features.</p>
+
+          <h2>10. Controls</h2>
+          <p>Touch Controls: Swipe and tap for volume and track control.</p>
+          <p>
+            Physical Buttons: Traditional buttons for power, volume, and
+            playback control.
+          </p>
+
+          <h2>11. Microphone</h2>
+          <p>Built-in microphone for calls and voice assistants.</p>
+          <p>Noise-canceling microphones for clearer call quality.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<style>
+  .container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 50vw;
+  }
+
+  .column {
+    width: 48%;
+  }
+
+  h2 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+
+  li {
+    margin-bottom: 5px;
+  }
+  .shortcut {
+    width: 50vw;
+  }
+  .keys {
+    width: 15vw;
+  }
+  main {
+    margin-top: 5vh;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70vh;
+  }
+</style>

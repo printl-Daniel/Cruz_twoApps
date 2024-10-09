@@ -1,0 +1,21 @@
+{% load static %}
+<body>
+  {% include 'includes/headphoneheader.html' %}
+  <main>
+    <img src="{% static 'images/headphone-parts.png' %}" alt="" />
+  </main>
+</body>
+
+<style>
+  img {
+    width: 60vw;
+  }
+  main {
+    margin-top: 5vh;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+  }
+</style>

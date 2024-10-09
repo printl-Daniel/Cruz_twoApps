@@ -1,0 +1,25 @@
+{% load static %}
+<body>
+  {% include 'includes/header.html' %}
+  <main>
+    <img class="shortcut" src="{% static 'images/shortcut.png' %}" alt="" />
+    <img class="img-fluid keys" src="{% static 'images/keys.png' %}" alt="" />
+  </main>
+</body>
+
+<style>
+  .shortcut {
+    width: 50vw;
+  }
+  .keys {
+    width: 15vw;
+  }
+  main {
+    margin-top: 5vh;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70vh;
+  }
+</style>
