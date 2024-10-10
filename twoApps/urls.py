@@ -21,7 +21,7 @@ urlpatterns = [
     path('', include('main.urls')),
     path('keyboard/', include('keyboard.urls')),
     path('main/', include('main.urls')),
-    path('headphone/', include('headphone.urls')),
+    path('headphones/', include('headphones.urls')),
     path('admin/', admin.site.urls),
 
 ]
